@@ -4,7 +4,7 @@
 This project is for a fully functional cycling computer built from an Arduino and various sensors. Designed to connect to an Android device over bluetooth via this app:
 
 ## Features
-* Wheel speed
+* Wheel RPM
 * Odometer
 * Front/Rear Gear Indicator
 * Low power consumption (about 30 hrs of use from 4x AA batteries)
