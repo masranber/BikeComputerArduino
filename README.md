@@ -42,8 +42,8 @@ HC-05 is connected to the Arduino according to the pinout diagram below. The RXD
 ### A3144 Hall Effect Sensor
 Required for calculating wheel speed and odometer. The output is active low (output is pulled to GND when a magnetic field is present near the sensor) so the output must have either a 10k pullup resistor to +5V, or alternatively (the method used by this project) using the internal pullup resistor in the Arduino Uno (INPUT_PULLUP).
 
-### Slide Potentiometer
-Required for gear indicators. The potentiometer body can be ziptied to the frame beneath the shift cables. The easiest location to put these is along the top tube near the headset where both shift cables run next to each other. This minimizes the amount of wire needed. The slides were epoxied to the shift cables.
+### 10kΩ Slide Potentiometer
+Required for gear indicators. 10k is optimal, although anything from 1k-50k works. 45mm of travel is enough for most bikes. The potentiometer body can be ziptied to the frame beneath the shift cables. The easiest location to put these is along the top tube near the headset where both shift cables run next to each other. This minimizes the amount of wire needed. The slides were epoxied to the shift cables.
 
 ## Wiring/Pinout Diagram
 ![Wiring Diagram](https://github.com/masranber/BikeComputerArduino/blob/main/images/arduino%20bike%20computer%20diagram.png)
