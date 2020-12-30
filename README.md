@@ -25,6 +25,24 @@ This project is for a fully functional cycling computer built from an Arduino an
 * 4xAA Battery holder w/ DC barrel jack
 * 20+ ft 22AWG wire
 
+## Using (low effort, working on better guide w/ pictures)
+### Attaching Sensors
+1. Mount hall effect sensor to front fork
+2. Attach magnet to spoke , securing with tape or epoxy, so it passes directly in front of the hall sensor when the wheel spins
+3. Attach slide potentiometers to bike frame and shift cables (detailed below in Slide Potentiometer section)
+4. Connect sensors to Arduino according to wiring diagram below
+### Flashing Arduino
+5. Connect Arduino to PC and flash the BikeComputerArduino.ino sketch using the Arduino IDE
+6. Leave Arduino connected to USB so it's powered on
+### Configuring Android Device
+7. Install Bike Computer app on your device
+8. In your device's settings, turn on bluetooth and pair with the HC-05
+### Testing
+7. Connect Arduino to power source (battery or USB)
+8. Open Android app and press "Connect"
+
+You should see the speed appear. Pressing "Start Trip" will begin a trip and you should see the odometer, average speed, and timer display.
+
 ## Arduino
 An Arduino Uno R3 was used for this project. The pinouts can be configured for any Arduino provided it supports hardware interrupts.
 Should work on 3.3V Arduino boards, however I did not test this. The A3144 Hall Effect Sensor datasheet specifies a minimum VCC of 4.5V however it should operate at 3.3V although the rise/fall times on the output might be lazy.
